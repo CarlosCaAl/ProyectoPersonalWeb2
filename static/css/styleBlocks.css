@@ -1,0 +1,54 @@
+            .blackblock{
+                display: block;
+                background-color: var(--color2);
+                margin: 3% 3%;
+                padding: 1%;
+                box-shadow: 2px 2px 4px var(--color3);
+                font-family: Arial;
+            }
+            body .blackblock:first-child{
+                margin-top: 1%;
+            }
+            .blackblock h6{
+                color: var(--color3);
+                font-size: medium;
+            }
+            .blackblock h5{
+                text-shadow: 1px 1px 2px var(--color3);
+                color: var(--color1);
+                font-size: x-large;
+                font: bold;
+            }
+            .blackblock h4{
+                text-shadow: 1px 1px 2px var(--color3);
+                color: var(--color1);
+                font-size: xx-large;
+                font: bold;
+            } 
+            .whiteblock{
+                display: block;
+                background-color: var(--color3);
+                margin: 3% 3%;
+                padding: 1%;
+                box-shadow: 2px 2px 4px var(--color2);
+                font-family: Arial;
+            }
+            body .whiteblock:first-child{
+                margin-top: 1%;
+            }
+            .whiteblock h6{
+                color: var(--color2);
+                font-size: medium;
+            }
+            .whiteblock h5{
+                text-shadow: 1px 1px 2px var(--color2);
+                color: var(--color1);
+                font-size: x-large;
+                font: bold;
+            }
+            .whiteblock h4{
+                text-shadow: 1px 1px 2px var(--color2);
+                color: var(--color1);
+                font-size: xx-large;
+                font: bold;
+            }

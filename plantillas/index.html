@@ -1,0 +1,220 @@
+{% extends 'base/base.html' %}
+
+{% block titulo %}
+    Los Números Mueven El Mundo
+{% endblock %}
+
+{% block nombre %}
+    Página principal
+{% endblock %}
+
+{% block contenido %}
+    <div class="animated-text">
+        <h2> LOS NÚMEROS MUEVEN <span class="typed"> </span> </h2>
+    </div>
+    <div class="whiteblock">
+        <br/>
+        <h4>
+            Diario de trabajo: OBJETIVO A
+        </h4>
+        <br/>
+        <h5>
+            Ai: Indicar un objetivo de aprendizaje para el proyecto y explicar cómo un interés personal condujo a ese objetivo.
+        </h5>
+        <br/>
+        <h6>
+            Las enfermedades neuromusculares son el grupo de patologías que afectan gravemente a la fuerza muscular. A día de hoy no existe una cura a largo plazo, lo mejor que se puede hacer es mejorar la calidad de vida de los pacientes con medicamentos y asistencia personal, es decir, que estén acompañados. Entendí que su principal problema es la dependencia de las personas cercanas al enfermo y la dificultad para llevar acciones a cabo por su cuenta.
+            <br/><br/>
+            Para hacer posible esto, llegué a la conclusión de que aplicar la ciencia era la clave. Entonces decidí buscar una solución innovadora para hacer frente a las limitaciones domésticas de los pacientes. También pensé en la importancia de la concienciación, por lo que decidí investigar estas enfermedades y utilizar la información para hacer conciencia. Así pues, decidí que mi objetivo de aprendizaje sería aprender acerca de las enfermedades neuromusculares y aprender a aplicar la ciencia para mejorar la calidad de vida de los pacientes.
+        </h6>
+        <br/>
+        <h5>
+            Aii: Indicar un producto esperado y desarrollar criterios de éxito adecuados para ese producto.
+        </h5>
+        <br/>
+        <h6>
+            Para lograrlo, decidí combinar mi interés por las ciencias y la electrónica con el objetivo de aprendizaje. Y pensé en diseñar, construir y programar un robot como solución para el problema presentado. El robot proporcionaría la asistencia necesaria y evitaría que el paciente estuviera solo. También aplicaría su movilidad para reemplazar a la del enfermo y realizar tareas simples, como coger objetos o escribir. Al estar conectado a internet, los familiares del paciente podrían acceder a la información y ser informados en caso de peligro.
+            <br/><br/>
+            El robot estará protegido por una carcasa de PLA impresa en 3D. Tras investigar acerca de las mejores ruedas, tuve que comparar las ventajas y desventajas de cada una y finalmente opté por ponerle dos ruedas con motores y una tercera rueda multidireccional en lugar de cuatro con motores o de las ruedas omnidireccionales. Tendrá dos brazos para poder agarrar objetos. Para que pudiera reconocer el ambiente, pensé en ponerle una cabeza doblemente articulada con una cámara y un sensor de distancia. Y tendrá una pantalla LED bajo la cabeza.
+        </h6>
+        <br/>
+        <table class="tabla">
+            <tr>
+                <td> <font> Especificación </font> </td>
+                <td> <font> Descripción </font> </td>
+            </tr>
+            <tr>
+                <td> <font> MOVIMIENTO: El movimiento del robot debe ser fluido y preciso. </font> </td>
+                <td> <font> Tras estudiar diferentes robots, pude señalar sus principales características. Una de las preocupaciones al crear un robot, es que se mueva con facilidad y sin atascarse, por lo que no debe pesar demasiado aunque debe suministrar suficiente potencia a los motores. Para programarlo mejor, conviene que el movimiento sea uniforme (MRU/MCU).
+                <br/><br/>
+                Lo verificaré aplicando una prueba en la que el robot tendrá que avanzar y retroceder 1m y girar 90° en ambos sentidos. Utilizaré un transportador y una regla para detectar el error relativo. Calcularé la media de los errores relativos para comprobar si los errores son realmente escasos. </font> </td>
+            </tr>
+            <tr>
+                <td> <font> VISIÓN: El robot tendrá una visión artificial inteligente. Podrá reconocer objetos y personas. </font> </td>
+                <td> <font> Para que el robot pudiera interactuar con el mundo, decidí que una cámara sería muy necesaria. Para que detectara la profundidad, elegí que tuviera un sensor de ultrasonidos que mida distancias. Pensé que la cámara y el sensor debían ser girados por dos motores, para así tener un amplio campo de visión. Quiero que el robot sea capaz de reconocer los objetos y posicionarlos sobre un plano de coordenadas.
+                <br/><br/>
+                Utilizaré un cubo como prueba. Una vez más, sirviéndome de reglas mediré los errores relativos en las 3 coordenadas. La media de los errores me permitirá saber si localiza correctamente los objetos. </font> </td>
+            </tr>
+            <tr>
+                <td> <font> APP: El control del robot debe ser simple y práctico </font> </td>
+                <td> <font> La aplicación que controlará el robot debe ser intuitiva y fácil de utilizar, la descarga del código y su ejecución también debe ser simple. El código debe evitar la aparición de mensajes de error. La aplicación debe sugerir soluciones ante los posibles fallos.
+                <br/><br/>
+                Encuestaré a los usuarios para saber qué opinan sobre el control de la aplicación y su simpleza. </font> </td>
+            </tr>
+            <tr>
+                <td> <font> BRAZOS: El robot debe ser capaz de mover los brazos con facilidad hacia donde elija. </font> </td>
+                <td> <font> Los brazos se componen por 3 ejes, por lo que se podrán mover en el espacio 3D.  Para moverlos, escogí buscar una fórmula que calculara sus movimientos en el plano cartesiano tridimensional y que calculara los ángulos necesarios para llevar la mano a cada punto. Este objetivo es un verdadero reto en el que tendré que aplicar muchos de mis conocimientos en matemáticas.
+                <br/><br/>
+                A partir de los componentes del apartado de “visión”, localizaré un objeto y utilizaré sus coordenadas para que el brazo se dirija a ellas. </font> </td>
+            </tr>
+            <tr>
+                <td> <font> APARIENCIA: Quiero que el producto sea estético. </font> </td>
+                <td> <font> Para que sea estético, necesita tener una buena elección de colores. La forma tiene que ser amigable. Quería que tuviera una iluminación original y animada, así que opté por utilizar una pantalla 8x8 LED de colores en la que pueda mostrar animaciones y texto. </font> </td>
+            </tr>
+            <tr>
+                <td> <font> INFORMACIÓN: La investigación será profunda y detallada. Y será compartida en una página web. </font> </td>
+                <td> <font> Recogeré información variada acerca de las enfermedades neuromusculares, abarcando las causas, las consecuencias y las soluciones desde un punto de vista científico. Para difundir la información dudé entre crear una presentación o añadirla a mi página web. Finalmente, decidí mostrarla en la página web porque también quiero aprender a utilizar el lenguaje html. </font> </td>
+            </tr>
+        </table>
+        <br/><br/>
+        <h5>
+            Aiii: Presentar un plan claro y detallado para lograr el producto y los criterios de logro relacionados.
+        </h5>
+        <br/>
+        <table class="tabla2">
+            <tr>
+                <td> <font>  </font> </td>
+                <td> <font> Acción </font> </td>
+                <td> <font> Descripción </font> </td>
+                <td> <font> Criterio </font> </td>
+                <td> <font> Tiempo </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 1 </font> </td>
+                <td> <font> Comprar </font> </td>
+                <td> <font> Comparar precios de los componentes y comprarlos por internet. </font> </td>
+                <td> <font> 7|8 - 1h </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 2 </font> </td>
+                <td> <font> Investigar </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font> Información </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 3 </font> </td>
+                <td> <font> Diseñar boceto y croquis </font> </td>
+                <td> <font> Un dibujo a mano alzada para elaborar mi idea. Y uno en limpio creado con herramientas de dibujo. </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 4 </font> </td>
+                <td> <font> Diseñar 3D </font> </td>
+                <td> <font> Pasar mis dibujos a un diseño digital 3D y dividirlo en partes. </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 5 </font> </td>
+                <td> <font> Imprimir </font> </td>
+                <td> <font> Copiar los archivos de cada parte en una tarjeta SD y mandárselas a la impresora para que las imprima. Después limar cada pieza para arreglar la impresión. </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 6 </font> </td>
+                <td> <font> Construir </font> </td>
+                <td> <font> Utilizar las piezas impresas para montar la estructura. Colocar los diferentes motores, añadir la pantalla y atornillar los sensores y la cámara. Colocar la RaspberryPi, así como la placa en la que haré las conexiones. Juntarlo todo con un lápiz 3D. </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 7 </font> </td>
+                <td> <font> Programar motores </font> </td>
+                <td> <font> Investigar el funcionamiento del módulo controlador de motores. Programar la RaspberryPi para mandarle señales. Y escribir funciones básicas para el movimiento. </font> </td>
+                <td> <font> Movimiento </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 8 </font> </td>
+                <td> <font> Programar servo motores </font> </td>
+                <td> <font> Investigar los pulsos que necesitan. Programar la placa para enviarlos. </font> </td>
+                <td> <font> Brazos, visión </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 9 </font> </td>
+                <td> <font> Programar cámara </font> </td>
+                <td> <font> Aprender acerca de la visión artificial y hacer una selección de los conceptos más útiles. Crear diferentes programas para probarla. </font> </td>
+                <td> <font> Visión </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 10 </font> </td>
+                <td> <font> Programar ultra Sonidos </font> </td>
+                <td> <font> Investigar cómo mandar pulsos que inician las ondas sonoras, cómo leer las ondas que rebotan y calcular la distancia a partir del tiempo que tardan. </font> </td>
+                <td> <font> Visión </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 11 </font> </td>
+                <td> <font> Programar acelerómetro </font> </td>
+                <td> <font> Leer los datos de la inclinación y del movimiento del robot. Esto requiere una comunicación i2c entre mi placa y el módulo. </font> </td>
+                <td> <font> Movimiento </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 12 </font> </td>
+                <td> <font> Programar pantalla </font> </td>
+                <td> <font> Enviar los colores a los LEDs. Crear funciones para mostrar animaciones o texto. </font> </td>
+                <td> <font> Apariencia </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 13 </font> </td>
+                <td> <font> Programar correo </font> </td>
+                <td> <font> Programar la placa para enviar correos a través de mi cuenta a quien yo escriba. </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 14 </font> </td>
+                <td> <font> Crear web </font> </td>
+                <td> <font> Crear y diseñar una página web compleja. </font> </td>
+                <td> <font> Información </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 15 </font> </td>
+                <td> <font> Programar ventanas </font> </td>
+                <td> <font> Programar python para abrir una ventana con la que se puede interactuar en el ordenador. </font> </td>
+                <td> <font> App </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 16 </font> </td>
+                <td> <font> Programar servidor </font> </td>
+                <td> <font> Programar la placa para abrir un servidor y a las ventanas anteriores para conectarse a este servidor y enviar datos. </font> </td>
+                <td> <font> App </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 17 </font> </td>
+                <td> <font> Crear App </font> </td>
+                <td> <font> Crear una aplicación de ordenador que controle el robot remótamente accediendo a su servidor. </font> </td>
+                <td> <font> App </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+            <tr>
+                <td> <font> 18 </font> </td>
+                <td> <font> Programar Robot </font> </td>
+                <td> <font> Utilizar todas las funciones anteriores para elaborar respuestas a las peticiones de la app. </font> </td>
+                <td> <font>  </font> </td>
+                <td> <font>  </font> </td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

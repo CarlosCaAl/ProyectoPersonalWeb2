@@ -1,0 +1,62 @@
+<html lang="es">
+    <head>
+        <title>
+            {% block titulo %}
+            {% endblock %}
+        </title>
+        <link rel="icon" href="{{ url_for('static',filename='icon/icon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleAnimation.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleBlocks.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleCopy.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleDisplay.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleDisplayJS.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleDownload.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleImages.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleMenu.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleScroll.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleTable.css') }}">
+    </head>
+    <body>
+        <header class="menubarspace" id="display-menu">
+            <div class="menubar">
+                <font>|||</font>
+                <nav class="navegar" id="move">
+                    <ul class="menu">
+                        <li> <a href="/"> MI PROYECTO </a> </li>
+                        <li> <a> | </a> </li>
+                        <li> <a href="page1"> Investigación </a> </li>
+                        <li> <a href="page2"> Tutorial </a> </li>
+                        <li> <a href="page3"> Descargas </a>
+                            <ul class="submenu">
+                                <li> <a href="https://github.com/CarlosCaAl/ProyectoPersonalCode/raw/main/Robot.zip"> Código1 </a> </li>
+                                <li> <a href="https://github.com/CarlosCaAl/ProyectoPersonalCode/raw/main/App.zip"> Código2 </a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="page4?error=error"> Errores </a>
+                            <ul class="submenu">
+                                <li> <a href="page4?error=error01"> Error01 </a> </li>
+                                <li> <a href="page4?error=error02"> Error02 </a> </li>
+                                <li> <a href="page4?error=error03"> Error03 </a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="page5"> Proceso </a> </li>
+                        <li> <a href="page6"> Documentación </a> </li>
+                        <li> <a> | </a> </li>
+                        <li> <a> 
+                            {% block nombre %}
+                            {% endblock %}
+                        </a> </li>
+                        <li> <a>  </a> </li>
+                    <ul></ul>
+                </nav>
+            </div>
+        </header>
+        {% block contenido %}
+        {% endblock %}
+        <script type="text/javascript" src="{{ url_for('static',filename='js/color.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/typed.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/text.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/menu.js') }}"></script>
+    </body>
+</html>

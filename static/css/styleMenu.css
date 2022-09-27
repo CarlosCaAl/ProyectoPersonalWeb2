@@ -1,0 +1,76 @@
+            .menubar nav{
+                display: none;
+            }
+            .menubar{
+                margin: 3%;
+                background: var(--color2);
+            }
+            .menubarspace{
+                background: var(--color1);
+                height: 80px;
+            }
+            .menubar font{
+                display: inline-block;
+                font-size: medium;
+                background: var(--color2);
+                color: var(--color3);
+                padding: 10px 10px;
+            }
+            nav{
+                width: 1000px;
+            }
+            .submenu li a{
+                color: var(--color3);
+                border: 2px solid var(--color2);
+                border-bottom: 0px solid var(--color2);
+            }
+            .submenu li:last-child a{
+                border-bottom: 2px solid var(--color2);
+            }
+            .navegar ul{
+                list-style: none;
+            }
+            .menu > li{
+                position: relative;
+                display: inline-block;
+            }
+            .menu > li > a{
+                display: block;
+                padding: 10px 10px;
+                color: var(--color3);
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: none;
+            }
+            .menu > li:hover > a{
+                color: var(--color1);
+                transition: all .8s;
+            }
+            a{
+                font-size: medium;
+            }
+            .submenu{
+                position: absolute;
+                background: var(--color3);
+                width: 110%;
+                visibility: hidden;
+                opacity: 0;
+            }
+            .submenu li a{
+                display: block;
+                padding: 10px 10px;
+                color: var(--color2);
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: none;
+            }
+            .menu > li:hover .submenu{
+                visibility: visible;
+                opacity: 1;
+                transition: all .8s;
+            }
+            .submenu > li > a:hover{
+                background: var(--color1);
+                transition: all .8s;
+            }
+            .menubar{
+                position: absolute;
+            }

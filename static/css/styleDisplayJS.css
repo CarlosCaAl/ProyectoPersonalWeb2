@@ -1,0 +1,18 @@
+.display-field-black .display-btn{
+    background-color: var(--color2);
+    margin: 1%;
+    padding: 1%;
+    margin-right: 0%;
+    color: var(--color3);
+    display: inline-block;
+}
+.display-field-black .display-btn:hover{
+    color: var(--color1);
+}
+.display-field-black .displayed{
+    background-color: var(--color2);
+    margin: 1%;
+    padding: 1%;
+    margin-left: 0%;
+    color: var(--color3);
+}

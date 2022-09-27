@@ -1,0 +1,25 @@
+.animated-text{
+    background-color: var(--color3);
+    margin: 3% 3%;
+    padding: 1%;
+    box-shadow: 2px 2px 4px var(--color2);
+    font-family: Arial;
+}
+.animated-text h2{
+    text-align: center;
+    color: var(--color2);
+    font-size: x-large;
+    font: bold;
+}
+.animated-text span{
+    text-shadow: 1px 1px 2px var(--color2);
+    color: var(--color1);
+    font-size: x-large;
+    font: bold;
+}
+.animated-text span font{
+    color: var(--color2);
+    font-size: x-large;
+    font: bold;
+    text-shadow: 0px 0px 0px var(--color2);
+}

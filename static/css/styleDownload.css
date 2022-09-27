@@ -1,0 +1,12 @@
+            .download{
+                background-color: var(--color2);
+                margin: 30px 30px;
+                padding: 10px;
+                width: 100px;
+                height: 45px;
+            }
+            .download a{
+                color: var(--color1);
+                text-decoration: none;
+                font-size: x-large;
+            }

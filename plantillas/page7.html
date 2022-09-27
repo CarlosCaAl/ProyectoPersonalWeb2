@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block titulo %}
+    Documentación
+{% endblock %}
+
+{% block nombre %}
+    Documentación
+{% endblock %}
+
+{% block contenido %}
+    <div class="display-field-black">
+        <div class="display-btn" id="display-btn"> CLICK </div>
+        <div class="displayed" id="displayed"> TEXTO DESPLEGADO </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/display.js') }}"></script>
+{% endblock %}

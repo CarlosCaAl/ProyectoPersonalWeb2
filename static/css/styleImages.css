@@ -1,0 +1,25 @@
+
+            .image-xsmall{
+                width: 160px;
+                height: 90px;
+            }
+            .image-small{
+                width: 320px;
+                height: 180px;
+            }
+            .image-medium{
+                width: 480px;
+                height: 270px;
+            }
+            .image-medium2{
+                width: 100%;
+                height: 50%;
+            }
+            .image-large{
+                width: 640px;
+                height: 360px;
+            }
+            .image-xlarge{
+                width: 800px;
+                height: 450px;
+            }
